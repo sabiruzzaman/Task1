@@ -31,6 +31,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun viewInit() {
+
+
+        binding.viewBtnId.setOnClickListener{
+            startActivity(Intent(applicationContext, ViewDataActivity::class.java))
+        }
+
         productViewModel = ViewModelProvider(this)[ProductViewModel::class.java]
 
         binding.submitBtnId.setOnClickListener {
@@ -87,7 +93,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addDataToDatabase() {
-        val sdf = SimpleDateFormat("MM d y")
+        val sdf = SimpleDateFormat("MM: d: y")
         val currentDate = sdf.format(Date())
 
         val addProduct = Product(0, productName, productPrice, currentDate)
@@ -97,4 +103,6 @@ class MainActivity : AppCompatActivity() {
 
         startActivity(Intent(applicationContext, ViewDataActivity::class.java))
     }
+
+
 }

@@ -57,8 +57,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:text="Total"
-            android:textColor="@color/black"
-            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -67,10 +65,7 @@
             android:id="@+id/totalValeTvId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
-            android:text="250"
-            android:textColor="@color/black"
-            android:textSize="20sp"
+            android:layout_marginStart="180dp"
             app:layout_constraintStart_toEndOf="@id/totalTvId"
             app:layout_constraintTop_toTopOf="@id/totalTvId" />
 
